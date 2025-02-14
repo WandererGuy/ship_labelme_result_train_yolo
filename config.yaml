@@ -1,0 +1,12 @@
+JSON_FOLDER_TO_CONVERT : "NAM_ALL_REFINED"
+PRETRAIN_MODEL_PATH : "yolo11n.pt"
+EPOCH_TRAIN  : 150
+dest_folder_train : "refined/train"
+dest_folder_val : "refined/val"
+class_need_replace_ls :
+ - "4"
+ - "3"
+ - "2"
+ - "1"
+class_replace_in : "0"
+ 
