@@ -1,6 +1,6 @@
-train: D:/WORK/ship_detect/assist_label/NAM_ALL_REFINED/YOLODataset/images/train
-val: D:/WORK/ship_detect/assist_label/NAM_ALL_REFINED/YOLODataset/images/val
+train: NAM_ALL_REFINED\YOLODataset/images/train/
+val: NAM_ALL_REFINED\YOLODataset/images/val/
 
-nc: 1
+nc: 5
 
-names: ['0']
+names: ['0', 'boat', '1', '4', '3']

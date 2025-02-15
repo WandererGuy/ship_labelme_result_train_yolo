@@ -18,8 +18,8 @@ if os.path.exists(dest_folder_val):
 folder_train = os.path.join(dataset_folder,r"YOLODataset\labels\train")
 folder_val = os.path.join(dataset_folder,r"YOLODataset\labels\val")
 yaml_file = os.path.join(dataset_folder, r"YOLODataset\dataset.yaml")
-os.remove(yaml_file)
-shutil.copy("dataset.yaml", yaml_file)
+# os.remove(yaml_file)
+# shutil.copy("dataset.yaml", yaml_file)
 
 ### excessive class 3 -> 0 ###
 # names: ['0', '3', '1', 'boat'] in yaml file 
