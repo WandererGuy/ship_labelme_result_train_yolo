@@ -7,6 +7,7 @@ python 0_prepare_all_dataset.py
 python 1_labelme2yolo.py --json_dir NAM_ALL_REFINED
 python 2_check_class.py
 python 3_replace_label.py
-python 3_1_move_files.py
-python 4_train_yolo.py
+python 2_check_class.py
+python 4_move_files.py
+@REM python 5_train_yolo.py
 

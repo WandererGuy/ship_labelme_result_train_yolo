@@ -4,9 +4,11 @@ from yolo txt extract crop image to make a classify dataset
 import os
 import cv2
 import uuid
-
+import shutil
 SAVE_SHIP_FOLDER = "classify_dataset"
-
+if os.path.exists(SAVE_SHIP_FOLDER):
+    shutil.rmtree(SAVE_SHIP_FOLDER)
+os.makedirs(SAVE_SHIP_FOLDER, exist_ok=True)
 def coor2coor(x_center, 
               y_center, 
               width, 

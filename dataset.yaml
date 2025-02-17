@@ -1,5 +1,5 @@
-train: NAM_ALL_REFINED\YOLODataset\images\train
-val: NAM_ALL_REFINED\YOLODataset\images\val
+train: D:\WORK\ship_labelme_result_train_yolo\YOLODataset\images\train
+val: D:\WORK\ship_labelme_result_train_yolo\YOLODataset\images\val
 
 nc: 1
 

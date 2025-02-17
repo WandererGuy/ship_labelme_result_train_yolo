@@ -6,3 +6,5 @@ env
 *.pt
 *.txt
 *.json
+runs
+YOLODataset

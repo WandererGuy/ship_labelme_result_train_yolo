@@ -1,8 +1,9 @@
-SOURCE_FOLDER : "D:/WORK/ALL_MATERIALS/SHIP_project/4_3_and_1"
+# SOURCE_FOLDER : "D:/WORK/ALL_MATERIALS/SHIP_project/4_3_and_1" # this is all dataset
+SOURCE_FOLDER : "D:/WORK/ship_labelme_result_train_yolo/4_3_and_1/Tau_ca_labelled"
 # destination folder name 
 JSON_FOLDER_TO_CONVERT : "NAM_ALL_REFINED"
 PRETRAIN_MODEL_PATH : "yolo11n.pt"
-EPOCH_TRAIN  : 150
+EPOCH_TRAIN  : 100
 dest_folder_train : "refined/train"
 dest_folder_val : "refined/val"
 # make up class if u  dont wanna replace
