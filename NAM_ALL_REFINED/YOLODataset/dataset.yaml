@@ -1,6 +1,0 @@
-train: NAM_ALL_REFINED\YOLODataset/images/train/
-val: NAM_ALL_REFINED\YOLODataset/images/val/
-
-nc: 5
-
-names: ['0', 'boat', '1', '4', '3']

@@ -1,30 +1,14 @@
 import os 
-"""
-count all class 
-"""
-folder = r"NAM_ALL_REFINED\YOLODataset\labels\train"
-t = {}
-for filename in os.listdir(folder):
-    filepath = os.path.join(folder, filename)
-    with open(filepath, "r") as f:
-        lines = f.readlines()
-        for line in lines:
-            cls = line.split(" ")[0]
-            if cls not in t:
-                t[cls] = 1
-            else: 
-                t[cls] += 1
-
-folder = r"NAM_ALL_REFINED\YOLODataset\labels\val"
+import shutil 
+folder  = "NAM_ALL_REFINED"
+import json
 
 for filename in os.listdir(folder):
-    filepath = os.path.join(folder, filename)
-    with open(filepath, "r") as f:
-        lines = f.readlines()
-        for line in lines:
-            cls = line.split(" ")[0]
-            if cls not in t:
-                t[cls] = 1
-            else: 
-                t[cls] += 1
-print (t)
+    if filename.endswith(".json"):
+        # Open and read the JSON file
+        path = os.path.join(folder, filename)
+        with open(path, 'r') as file:
+            data = json.load(file)
+            data["imagePath"] = path.replace(".json", ".jpg")
+        with open(path, 'w') as file:
+            json.dump(data, file, indent=4)

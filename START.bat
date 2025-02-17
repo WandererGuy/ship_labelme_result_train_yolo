@@ -1,11 +1,12 @@
 @echo off
 setlocal
 set current_dir=%~dp0
-set JSON_FOLDER_TO_CONVERT = "NAM_ALL_REFINED"
+@REM set JSON_FOLDER_TO_CONVERT same as in config.yaml
 call conda activate "%current_dir%env"
 python 0_prepare_all_dataset.py
-python 1_labelme2yolo.py --json_dir %JSON_FOLDER_TO_CONVERT%
+python 1_labelme2yolo.py --json_dir NAM_ALL_REFINED
 python 2_check_class.py
-python 3_remove_label.py
+python 3_replace_label.py
+python 3_1_move_files.py
 python 4_train_yolo.py
 

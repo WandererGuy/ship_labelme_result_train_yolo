@@ -1,8 +1,11 @@
+SOURCE_FOLDER : "D:/WORK/ALL_MATERIALS/SHIP_project/NAM_ALL_4_CLASS_LABELME"
+# destination folder name 
 JSON_FOLDER_TO_CONVERT : "NAM_ALL_REFINED"
 PRETRAIN_MODEL_PATH : "yolo11n.pt"
 EPOCH_TRAIN  : 150
 dest_folder_train : "refined/train"
 dest_folder_val : "refined/val"
+# make up class if u  dont wanna replace
 class_need_replace_ls :
  - "4"
  - "3"
