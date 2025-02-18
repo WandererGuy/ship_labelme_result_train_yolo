@@ -1,5 +1,5 @@
 # SOURCE_FOLDER : "D:/WORK/ALL_MATERIALS/SHIP_project/4_3_and_1" # this is all dataset
-SOURCE_FOLDER : "D:/WORK/ship_labelme_result_train_yolo/4_3_and_1/Tau_ca_labelled"
+SOURCE_FOLDER : "D:/WORK/ship_yolo_preannotate_labelme/3_AI_label"
 # destination folder name 
 JSON_FOLDER_TO_CONVERT : "NAM_ALL_REFINED"
 PRETRAIN_MODEL_PATH : "yolo11n.pt"
