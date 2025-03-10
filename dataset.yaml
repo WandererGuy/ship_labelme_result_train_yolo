@@ -1,6 +1,6 @@
 train: D:\WORK\ship_labelme_result_train_yolo\YOLODataset\images\train
 val: D:\WORK\ship_labelme_result_train_yolo\YOLODataset\images\val
 
-nc: 1
+nc: 5
 
-names: ['0']
+names: ['0', '1', '2', '3', '4']

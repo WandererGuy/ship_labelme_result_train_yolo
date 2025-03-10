@@ -1,5 +1,5 @@
 # SOURCE_FOLDER : "D:/WORK/ALL_MATERIALS/SHIP_project/4_3_and_1" # this is all dataset
-SOURCE_FOLDER : "D:/WORK/ship_yolo_preannotate_labelme/3_AI_label"
+SOURCE_FOLDER : "D:/WORK/ALL_MATERIALS/SHIP_project/6_ALL_rename"
 # destination folder name 
 JSON_FOLDER_TO_CONVERT : "NAM_ALL_REFINED"
 PRETRAIN_MODEL_PATH : "yolo11n.pt"
@@ -8,9 +8,10 @@ dest_folder_train : "refined/train"
 dest_folder_val : "refined/val"
 # make up class if u  dont wanna replace
 class_need_replace_ls :
- - "4"
- - "3"
- - "2"
- - "1"
+#  - "4"
+#  - "3"
+#  - "2"
+#  - "1"
+- "boat"
 class_replace_in : "0"
  

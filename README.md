@@ -24,6 +24,10 @@ steps:
 ## Training YOLO
 
 - After the conversion is done, use your preferred YOLO training method with the prepared dataset located in the `./YOLODataset` folder.
+make your own dataset.yaml , i have one example in dataset.yaml
+```
+python 5_train_yolo.py
+```
 
 ---
 
